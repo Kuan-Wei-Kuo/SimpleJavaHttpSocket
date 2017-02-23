@@ -12,7 +12,7 @@ public class HttpRequestParser {
 	
 	public static HashMap<String, String> parserHttpRequest(String header) {
 		
-		HashMap<String, String> httpRequestHeaderMap = new HashMap<>();
+		HashMap<String, String> httpRequestHeaderMap = new HashMap<String, String>();
 		
 		String[] headers = header.split("\r\n");
 		
@@ -20,9 +20,12 @@ public class HttpRequestParser {
 		for(String data : headers) {
 			if(next == 0) {
 				lastMethod = data.split(" /")[0];
-				lastData = data.substring(data.indexOf("?") + "?".length() , data.indexOf(" H"));
 				
-				if(lastData.indexOf("=") != -1) {
+				if(data.indexOf("?") != -1) {
+					lastData = data.substring(data.indexOf("?"), data.indexOf(" H"));
+				}
+				
+				if(data.indexOf("=") == -1) {
 					lastData = "";
 				}
 				
