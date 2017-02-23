@@ -1,0 +1,97 @@
+2017-02-23 18:00:15 INFO  HttpSocketServer:26 - 初始化Server中...
+2017-02-23 18:00:15 INFO  HttpSocketServer:36 - Server已經啟動...
+2017-02-23 18:00:18 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /0:0:0:0:0:0:0:1
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Upgrade-Insecure-Requests: 1
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> null: GET / HTTP/1.1
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Host: localhost:8080
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Accept-Encoding: gzip, deflate, sdch, br
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Connection: keep-alive
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Cache-Control: max-age=0
+2017-02-23 18:00:18 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /0:0:0:0:0:0:0:1
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> null: GET /favicon.ico HTTP/1.1
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Host: localhost:8080
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Accept-Encoding: gzip, deflate, sdch, br
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Referer: http://localhost:8080/
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Accept: image/webp,image/*,*/*;q=0.8
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Connection: keep-alive
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Cache-Control: no-cache
+2017-02-23 18:00:18 INFO  HttpSocketServer:69 - Hi -> Pragma: no-cache
+2017-02-23 18:00:18 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /0:0:0:0:0:0:0:1
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Upgrade-Insecure-Requests: 1
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> null: GET / HTTP/1.1
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Host: localhost:8080
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Accept-Encoding: gzip, deflate, sdch, br
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Connection: keep-alive
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Cache-Control: max-age=0
+2017-02-23 18:00:27 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /0:0:0:0:0:0:0:1
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> null: GET /favicon.ico HTTP/1.1
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Host: localhost:8080
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Accept-Encoding: gzip, deflate, sdch, br
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Referer: http://localhost:8080/
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Accept: image/webp,image/*,*/*;q=0.8
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Connection: keep-alive
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Cache-Control: no-cache
+2017-02-23 18:00:27 INFO  HttpSocketServer:69 - Hi -> Pragma: no-cache
+2017-02-23 18:00:27 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /0:0:0:0:0:0:0:1
+2017-02-23 18:00:50 ERROR HttpSocketServer:88 - Socket連線有問題...
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1911)
+	at com.example.sample.utils.HttpRequestParser.parserHttpRequest(HttpRequestParser.java:23)
+	at com.example.sample.server.HttpSocketServer.startServer(HttpSocketServer.java:66)
+	at com.example.sample.server.HttpSocketServer.run(HttpSocketServer.java:95)
+2017-02-23 18:00:50 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /127.0.0.1
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> null: POST / HTTP/1.1
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Accept-Language: zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Host: 127.0.0.1:8080
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Content-Length: 18
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Accept-Encoding: gzip, deflate, br
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Origin: null
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Accept: */*
+2017-02-23 18:00:50 INFO  HttpSocketServer:69 - Hi -> Connection: keep-alive
+2017-02-23 18:01:21 INFO  HttpSocketServer:26 - 初始化Server中...
+2017-02-23 18:01:21 INFO  HttpSocketServer:36 - Server已經啟動...
+2017-02-23 18:01:23 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /127.0.0.1
+2017-02-23 18:01:23 ERROR HttpSocketServer:88 - Socket連線有問題...
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1904)
+	at com.example.sample.utils.HttpRequestParser.parserHttpRequest(HttpRequestParser.java:23)
+	at com.example.sample.server.HttpSocketServer.startServer(HttpSocketServer.java:55)
+	at com.example.sample.server.HttpSocketServer.run(HttpSocketServer.java:95)
+2017-02-23 18:01:40 INFO  HttpSocketServer:26 - 初始化Server中...
+2017-02-23 18:01:40 INFO  HttpSocketServer:36 - Server已經啟動...
+2017-02-23 18:01:43 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /127.0.0.1
+2017-02-23 18:01:43 ERROR HttpSocketServer:88 - Socket連線有問題...
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1904)
+	at com.example.sample.utils.HttpRequestParser.parserHttpRequest(HttpRequestParser.java:24)
+	at com.example.sample.server.HttpSocketServer.startServer(HttpSocketServer.java:55)
+	at com.example.sample.server.HttpSocketServer.run(HttpSocketServer.java:95)
+2017-02-23 18:02:54 INFO  HttpSocketServer:26 - 初始化Server中...
+2017-02-23 18:02:54 INFO  HttpSocketServer:36 - Server已經啟動...
+2017-02-23 18:02:58 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /127.0.0.1
+2017-02-23 18:02:58 ERROR HttpSocketServer:88 - Socket連線有問題...
+java.lang.NullPointerException
+	at com.example.sample.utils.HttpRequestParser.parserHttpRequest(HttpRequestParser.java:29)
+	at com.example.sample.server.HttpSocketServer.startServer(HttpSocketServer.java:55)
+	at com.example.sample.server.HttpSocketServer.run(HttpSocketServer.java:95)
+2017-02-23 18:03:18 INFO  HttpSocketServer:26 - 初始化Server中...
+2017-02-23 18:03:18 INFO  HttpSocketServer:36 - Server已經啟動...
+2017-02-23 18:03:22 INFO  HttpSocketServer:44 - 取得連線，InetAddress = /127.0.0.1
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> null: POST / HTTP/1.1
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Accept-Language: zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Host: 127.0.0.1:8080
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Content-Length: 18
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Accept-Encoding: gzip, deflate, br
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Origin: null
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Accept: */*
+2017-02-23 18:03:22 INFO  HttpSocketServer:69 - Hi -> Connection: keep-alive
